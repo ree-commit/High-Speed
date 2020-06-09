@@ -19,7 +19,8 @@ https://www.nsnam.org/docs/dce/manual/ns-3-dce-manual.pdf
 https://dl.acm.org/doi/abs/10.1145/2535372.2535374
 https://www.nsnam.org/docs/dce/manual/ns-3-dce-manual.pdf
 
-# How to reproduce this project
+# How to reproduce this project?
+
 **Docker** is an application that simplifies the process of managing application processes in containers. Containers let you run your applications in resource-isolated processes. we install docker in Ubuntu 18.04 LTS.
 
 After installing docker follow the steps to setup DCE:
@@ -173,8 +174,8 @@ create a folder ’cwnd data’ inside ns-3-dce/result/dumbbell-topology where y
 >bake.py build -vvv
 
 
-##### 5. [Follow previous set of commands](#how-to-reproduce-this-project) 
+##### 5. [Follow previous set of commands](#how-to-reproduce-this-project?) 
 
 *// if you wish to use default recovery-
->use –recovery=TcpPrrRecovery
+>use –recovery=TcpPrrRecovery while executing topology.
 
