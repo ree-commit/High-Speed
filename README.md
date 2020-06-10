@@ -11,29 +11,40 @@ cwnd and standard TCP is followed.
 followed.
 
 # Direct Code Execution (DCE) 
-It is a module for ns-3 that provides facilities to execute, withinns-3, existing implemen-tations of userspace and kernelspace network protocols or applications without source code changes.  For exampleinstead of using the pseudo application provided byns-3V4PingHelperyou can use the true ping.
+It is a module for ns-3 that provides facilities to execute, within ns-3, existing implementations of userspace and kernelspace network protocols or applications without source code changes.  For example instead of using the pseudo application provided by ns-3 V4PingHelper you can use the true ping.
 
 To read more-
 
 https://www.nsnam.org/docs/dce/manual/ns-3-dce-manual.pdf
+
+
 https://dl.acm.org/doi/abs/10.1145/2535372.2535374
+
+
 https://www.nsnam.org/docs/dce/manual/ns-3-dce-manual.pdf
 
 # How to reproduce this project?
 
 **Docker** is an application that simplifies the process of managing application processes in containers. Containers let you run your applications in resource-isolated processes. we install docker in Ubuntu 18.04 LTS.
 
+>sudo apt install docker.io
+
+**Install Docker container of using docker image of ns-3 DCE**
+
+>sudo docker run -i -t thehajime/ns-3-dce /bin/bash
+
 After installing docker follow the steps to setup DCE:
 ##### 1. Pull the docker image to install NS-3 DCE.
+
 >docker pull thehajime/ns-3-dce
 
 ##### 2. Run docker to create a container
 
 >sudo docker ps -a				*//for list of all containers*
 
->sudo docker start hopeful_leavitt				*//start particular container*
+>sudo docker start your_docker_name				*//start particular container*
 
->sudo docker exec -it hopeful_leavitt /bin/bash				*//take you to particular container where you can find the ns-3 dce.*
+>sudo docker exec -it your_docker_name /bin/bash				*//take you to particular container where you can find the ns-3 dce.*
 
 
 ##### 3. Install vim in docker container.
