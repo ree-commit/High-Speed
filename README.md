@@ -11,13 +11,15 @@ cwnd and standard TCP is followed.
 followed.
 
 # Direct Code Execution (DCE) 
-It is a module for ns-3 that provides facilities to execute, withinns-3, existing implemen-tations of userspace and kernelspace network protocols or applications without source code changes.  For exampleinstead of using the pseudo application provided byns-3V4PingHelperyou can use the true ping.
+It is a module for ns-3 that provides facilities to execute, within ns-3, existing implementations of userspace and kernelspace network protocols or applications without source code changes.  For example instead of using the pseudo application provided by ns-3 V4PingHelper you can use the true ping.
 
 To read more-
 
 https://www.nsnam.org/docs/dce/manual/ns-3-dce-manual.pdf
 
+
 https://dl.acm.org/doi/abs/10.1145/2535372.2535374
+
 
 https://www.nsnam.org/docs/dce/manual/ns-3-dce-manual.pdf
 
